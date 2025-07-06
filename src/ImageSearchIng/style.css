@@ -1,0 +1,38 @@
+#inputsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 20px;
+}
+ input, button{
+    padding: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}
+label{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+button{
+    cursor: pointer;
+}
+body{
+    background-color: rgb(5, 3, 43);
+}
+.photos-grid{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 16px;
+     margin-top: 20px;
+    
+    
+}
+img{
+    width: "100%";
+    height: auto;
+    display: block;
+}
