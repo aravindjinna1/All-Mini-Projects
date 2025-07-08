@@ -5,7 +5,10 @@ import './App.css'
 // import ExpenseTracker from  './ExpenseTracker/app'
 // import JokeGen from './JokeGenerator/App'
 // import ImgSearch from './ImageSearchIng/App'
-import BmiCalculator from './BMI-Calculatoor/App'
+// import BmiCalculator from './BMI-Calculatoor/App'
+// import CurrencyConverter from './CurrencyConverter/Main'
+import QuizzApp from './QuizzApp/Main.jsx'
+// import FSDclass from './FSDclass/Parent'
 function App() {
 
   return (
@@ -15,10 +18,13 @@ function App() {
      {/* <ExpenseTracker/> */}
      {/* <JokeGen/> */}
      {/* <ImgSearch/> */}
-     <BmiCalculator />
+     {/* <BmiCalculator /> */}
+     {/* <CurrencyConverter /> */}
+     <QuizzApp />
+     {/* <FSDclass/> */}
      
     </div>
   )
 }
 
-export default App
+export default App;

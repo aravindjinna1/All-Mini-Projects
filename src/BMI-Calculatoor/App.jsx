@@ -44,16 +44,16 @@ constructor(props){
              this.setState({bmiCalResult: bmiCal});
 
              if(bmiCal < 18.5){
-               this.setState({status: "Underweight"})
+               this.setState({status: "Underweight ☹️"})
              }
              else if(bmiCal >= 18.5 && bmiCal <= 24.9){
-               this.setState({status: "Normal"})
+               this.setState({status: "Normal 😐"})
              }
              else if(bmiCal >= 25 && bmiCal <= 29.9 ){
-                this.setState({status: "Overweight"})
+                this.setState({status: "Overweight 😟"})
              }
              else if(bmiCal >= 30){
-                this.setState({status:"Obese"})
+                this.setState({status:"Obese 😖"})
              }
   
       }
