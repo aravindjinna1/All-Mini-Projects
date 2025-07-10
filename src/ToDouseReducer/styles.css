@@ -1,0 +1,67 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #040404;
+  margin: 0;
+  color:rgb(1, 0, 0);
+  padding: 20px;
+}
+
+.App {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li span.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.filtersfilters, .active{
+    background-color: #040404;
+    color: white;
+}

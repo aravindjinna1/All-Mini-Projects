@@ -7,8 +7,10 @@ import './App.css'
 // import ImgSearch from './ImageSearchIng/App'
 // import BmiCalculator from './BMI-Calculatoor/App'
 // import CurrencyConverter from './CurrencyConverter/Main'
-import QuizzApp from './QuizzApp/Main.jsx'
+// import QuizzApp from './QuizzApp/Main.jsx'
 // import FSDclass from './FSDclass/Parent'
+// import CurrencyConv from './CurrencyConvertr/CurncyConv';
+import ToDouseReducer from './ToDouseReducer/Todo'
 function App() {
 
   return (
@@ -20,9 +22,10 @@ function App() {
      {/* <ImgSearch/> */}
      {/* <BmiCalculator /> */}
      {/* <CurrencyConverter /> */}
-     <QuizzApp />
+     {/* <QuizzApp /> */}
      {/* <FSDclass/> */}
-     
+     {/* <CurrencyConv /> */}
+     <ToDouseReducer />
     </div>
   )
 }

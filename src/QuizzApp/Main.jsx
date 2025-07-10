@@ -8,7 +8,7 @@ function QuizzApp(){
     const [index, setIndex] = useState(null);
     const [correctAns,setCorrectAns] = useState(0);
     const [hide,setHide] = useState(false);
-    const [selected, setSelected] = useState(false);
+    const [selected, setSelected] = useState(null);
     // const trueEl = useRef();
     
     const HandleStart = () =>{
@@ -16,6 +16,8 @@ function QuizzApp(){
         //  setCurrentQuestion(QuizData[0])
          setIndex(0);
          setHide(true);
+         setSelected(null);
+
 
           
                   
@@ -23,25 +25,25 @@ function QuizzApp(){
      
                 
       const QuestionIncrement=(selected)=>{
-            setTimeout(()=>{
-            setIndex(prev => prev +1 );
-             const correctAns = QuizData[index].answer
-             setSelected(selected);
-
+         setSelected(selected);
+        
+           const correctAns = QuizData[index].answer
             if( correctAns === selected){
                  setCorrectAns(prev => prev+1);
+
+                  }
+
+                   setTimeout(()=>{
+                    setIndex(prev => prev +1 );
+                      setSelected(null);
+
+
                 //  selected.style.backgroundColor="green"
                 
                 //  selected.classList.add("corrected");
-
-            }
-            },1000)
+                  },500)
     }
         
-
-        
-
-
     return(
         <div>
             <div id='inpContainer' style={{display:hide? "none" : "block"}}>
@@ -58,7 +60,8 @@ function QuizzApp(){
 
                 <div key={ind}  onClick={(e)=>{QuestionIncrement(opt);
                     
-                }} className='options' style={{backgroundColor:selected && opt === QuizData[index].answer ? "green" : "", pointerEvents: selected ? 'none' : 'auto',}}>{opt}</div>
+                }} className='options' style={{backgroundColor:selected && opt === QuizData[index].answer ? "green" : selected === opt ? 'red' : '',
+              pointerEvents: selected ? 'none' : 'auto',}}>{opt}</div>
              ))} 
              </div>
              )}

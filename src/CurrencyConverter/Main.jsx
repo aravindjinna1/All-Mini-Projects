@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     fetch(`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${fromCurrency}`)
       .then(res => res.json())
-      .then(data => {
+      .then(data => { 
         setExchangeRate(data.conversion_rates[toCurrency]);
         setCurrencies(Object.keys(data.conversion_rates)); //Object.entries()for key and value // Object.keys() only for key //Object.values() for only value
       })

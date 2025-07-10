@@ -35,7 +35,7 @@ export default class ImgSearchApp extends Component {
             // // .then(data => console.log(data))
             // .then(data => this.setState({ Resultdata:data.photos|| [] }))
 
-            this.setState({ Resultdata: response.data.photos|| []});
+            this.setState({ Resultdata: response.data.photos || []});
 
              }
              catch(error){
